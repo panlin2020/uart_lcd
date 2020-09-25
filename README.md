@@ -7,15 +7,15 @@ Delay_ms(100);
 
 #
 >double v=0.12;
-char buf[128];
-char i;
-for(;;)
-{  v=0;
-  for(i=0;i<50;i++)
-  {
-sprintf(buf,"CLR(15);DC48(80,180,'%3.1f',1);\r\n",v);	
-    v=v+1.2;
-    UartSend(buf);
-    delay_ms(10);
-   }
-}
+>char buf[128];
+>char i;
+>for(;;)
+>{  v=0;
+ > for(i=0;i<50;i++)
+>  {
+>sprintf(buf,"CLR(15);DC48(80,180,'%3.1f',1);\r\n",v);	
+>    v=v+1.2;
+>   UartSend(buf);
+>    delay_ms(10);
+>   }
+>}
